@@ -11,7 +11,7 @@
                 data-bs-id="{{id}}"
                 data-bs-nickname="{{nickname}}"
                 data-bs-body="{{body}}"
-                data-bs-articleId="{{articleId}}">수정</button>
+                data-bs-article-id="{{articleId}}">수정</button>
     </div>
     <div class="card-body">
         <p class="card-text">{{body}}</p>
@@ -71,14 +71,15 @@
                             <!-- 히든 인풋 (articleId와 id 전송) -->
                             <input type="hidden" id="edit-comment-id">
                             <input type="hidden" id="edit-comment-article-id">
-                            <!-- 전송 버튼 -->
+
                         </form>
-                        <button type="button" id="edit-comment-btn" class="btn btn-outline-primary">수정</button>
+                        <!-- 전송 버튼 -->
+                        <button type="button" id="edit-comment-btn" class="btn btn-outline-primary">수정 완료</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script src = "/js/comment.js"></script>
-<script src = "/js/modal.js"></script>
+<script src="/js/comment.js"></script>
+<script src="/js/modal.js"></script>
