@@ -85,6 +85,7 @@ public class CommentService {
         return edited.toDto();
     }
 
+    // 댓글삭제
     @Transactional
     public CommentVO delete(Long id) {
         // 조회 및 예외처리

@@ -12,6 +12,10 @@
                 data-bs-nickname="{{nickname}}"
                 data-bs-body="{{body}}"
                 data-bs-article-id="{{articleId}}">수정</button>
+        <!-- Delete Button -->
+        <button type="button"
+                class="btn btn-sm btn-outline-danger comment-delete-btn"
+                data-comment-id="{{id}}">삭제</button>
     </div>
     <div class="card-body">
         <p class="card-text">{{body}}</p>
@@ -83,3 +87,4 @@
 </div>
 <script src="/js/comment.js"></script>
 <script src="/js/modal.js"></script>
+<script src="/js/delComment.js"></script>
