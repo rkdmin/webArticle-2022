@@ -1,4 +1,4 @@
-package ioc;
+package com.example.firstproject.ioc;
 
 public class Pork extends Ingredient{
     private String name;

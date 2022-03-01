@@ -1,4 +1,4 @@
-package ioc;
+package com.example.firstproject.ioc;
 
 public class Chef {
     // 셰프는 식재료 공장을 알고있음

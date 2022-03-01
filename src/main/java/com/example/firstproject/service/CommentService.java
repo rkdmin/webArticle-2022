@@ -1,10 +1,12 @@
 package com.example.firstproject.service;
 
+import com.example.firstproject.annotation.RunningTime;
 import com.example.firstproject.dto.CommentVO;
 import com.example.firstproject.entity.Article;
 import com.example.firstproject.entity.Comment;
 import com.example.firstproject.repository.ArticleRepository;
 import com.example.firstproject.repository.CommentRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -17,6 +19,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 public class CommentService {
 
     @Autowired private CommentRepository commentRepository;
@@ -45,6 +48,7 @@ public class CommentService {
     // 댓글 생성
     @Transactional
     public CommentVO create(Long articleId, CommentVO commentDto) {
+
         // 게시글 조회 및 예외 처리
         Article articleEntity = articleRepository.findById(articleId)// 1. 아이디가 없다면
                 .orElseThrow(()-> new IllegalArgumentException("댓글 생성 실패! 대상 게시글이 없습니다."));

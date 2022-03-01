@@ -1,4 +1,4 @@
-package ioc;
+package com.example.firstproject.ioc;
 
 public class Factory {
     public Ingredient get(String menu) {
